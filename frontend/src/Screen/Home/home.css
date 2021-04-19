@@ -1,0 +1,320 @@
+.hero-container{
+    margin-top: 3.125em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.padding{
+    padding: 0 6.25em;
+}
+
+.hero-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.5vw;
+    font-weight: 700;
+    letter-spacing:.1rem;
+    margin:0;
+    line-height:1.3em;
+}
+
+.hero-subtitle{
+    width: 80%;
+    margin: .625em 0;
+    font-size: 1.6vw;
+    font-weight: 500;
+    color:#222;
+    line-height: 180%;
+}
+
+.button{
+    cursor: pointer;
+    margin-top: 1.5em;
+    font-size: 1.2vw;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    color:#000;
+    background:#FDEC52;
+    border:none;
+    border-radius:.5em;
+    padding: 1em 2em;
+}
+
+.button:hover{
+    background:#f7e11f;
+}
+
+.hero-info_container{
+    width: 50%;
+}
+
+.hero-image_container{
+    width: 50%;
+}
+
+.hero-image{
+    width:100%;
+    height: 100%;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.875em;
+}
+
+.product-card{
+    border: .1em solid #999;
+    border-radius: .5em;
+    padding: .625em;
+    max-width: 16.25em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.25em;
+}
+
+.product-image{
+    width: 100%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: .5em;
+    margin-bottom: .5em;
+}
+
+.product-name{
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+.product-description{
+    font-size: .875rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 180%;
+    margin: 0;
+    height: 8em;
+}
+
+.product-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans',sans-serif;
+    justify-content: space-between;
+    height: 4em;
+    padding: 0 1em;
+    border: none;
+    background: #0B0D17;
+    border-radius: .5em;
+    color:#fff;
+    cursor: pointer;
+}
+
+.product-button:hover{
+    background: #000;
+}
+
+.product-button h6{
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+#popular-pizzas{
+    margin: 6.25em 0;
+}
+
+.popular-pizzas_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1.125em;
+}
+
+#customer-review{
+    background: #FDF99A;
+    padding: 2.5em 1.125em;
+    margin-bottom: 6.125em;
+}
+
+.review-text{
+    font-size: 1.4rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+    color: #000;
+    line-height: 200%;
+    width: 60%;
+    margin: auto;
+}
+
+.customer-info{
+    margin-top: 3em;
+    padding-left: 8em;
+    display: flex;
+    align-items: center;
+}
+
+.review-customer_img{
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    border-radius: 5em;
+    margin-right: 1em;
+}
+
+.customer-name{
+    font-size: 1.125rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+.customer-membership{
+    font-size: 1rem;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+#booking-container{
+    margin-bottom: 6.25em;
+}
+
+.booking-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #333333;
+    border-radius: .625em;
+}
+
+.booking-info_container{
+    width: 60%;
+    padding: 3em 1.5em;
+    height: 100%;
+}
+
+.booking-text{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 180%;
+
+}
+
+.booking-button{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Open Sans',sans-serif;
+    padding: .5em 1em;
+    margin-top: 1em;
+    border: none;
+    background: #FDEC52;
+    border-radius: .3em;
+}
+
+.booking-button:hover{
+    background: #f7e11f;
+}
+
+.booking-img_container{
+    display: flex;
+    justify-content: space-between;
+    width: 30em;
+}
+
+.booking-img_set-1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1060px){
+    .padding{
+        padding:0 3.125em;
+    }
+    .button{
+        font-size: 1.45vw;
+    }
+    .popular-pizzas_container{
+        grid-template-columns: auto auto auto;
+    }
+    .booking-img_set-1{
+        display:none;
+    }
+    .review-text{
+        font-size: 1.25rem;
+    }
+    .booking-info_container{
+        width: 70%;
+    }
+    .booking-img_container{
+        width:14em
+    }
+}
+
+@media screen and (max-width:768px){
+    .popular-pizzas_container{
+        grid-template-columns: auto auto;
+    }
+    .booking-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .booking-info_container{
+        width: 100%;
+    }
+    .booking-img_container{
+        display:none;
+    }
+    .review-text{
+        width: 80%;
+        font-size: 1.125rem;
+    }
+    .padding{
+        padding: 0 1.125em;
+    }
+    .hero-title{
+        font-size: 4rem;
+    }
+    .hero-subtitle{
+        width: 50%;
+        font-size: 1.25rem;
+        margin: 1em auto;
+    }
+    .hero-info_container{
+        width: 100%;
+        text-align:center;
+    }
+    .button{
+        margin-top: 1.125em;
+        font-size:1rem;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-image_container{
+        width: 80%;
+        margin: 3.125em auto 0 auto;
+    }
+}
+
+@media screen and (max-width:560px){
+    .hero-title{
+        font-size:3.125rem
+    }
+    .hero-subtitle{
+        width: 90%;
+    }
+    
+    .review-text{
+        font-size: 1rem;
+    }
+}
